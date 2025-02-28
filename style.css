@@ -1,97 +1,100 @@
-/* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #fff5e1; /* Soft cream background */
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5dc; /* Cream background */
     margin: 0;
     padding: 0;
+    color: #333; /* Darker text color for better readability */
+}
+
+.header {
+    background-color: #e2a32f; /* Elegant header color */
+    color: white;
+    padding: 40px 20px;
     text-align: center;
 }
 
-/* Header */
-.header {
-    padding: 60px;
-    background: linear-gradient(to right, #ffcc99, #ff9966);
-    color: white;
-}
-
 .subtitle {
-    font-size: 1.2rem;
+    font-style: italic;
+    margin-top: 10px;
 }
 
-/* Navbar */
 .navbar {
-    background: #d17a22;
-    padding: 12px;
+    background: #f8f9fa; /* Light background for the navbar */
+    padding: 10px 0;
 }
 
 .navbar ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
     padding: 0;
-    gap: 20px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds spacing between links */
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 .navbar a {
-    color: white;
     text-decoration: none;
+    color: #e2a32f;
     font-weight: bold;
-    padding: 10px 15px;
-    transition: 0.3s;
 }
 
 .navbar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+    text-decoration: underline;
 }
 
-/* Sections */
 .section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Slightly wider */
+    width: 90%; /* Reduce outer margins */
 }
 
-/* About Section */
 .profile-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .profile-pic {
-    width: 220px;
     border-radius: 50%;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 30%; /* Occupies half of the section */
+    height: auto;
+    object-fit: cover;
 }
 
-/* Skills */
+.profile-container p {
+    flex: 1; /* Ensures the text takes up the remaining half */
+    text-align: justify;
+    font-size: 1rem;
+}
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 20px;
-    text-align: left;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .skill-item {
-    background: #ffd699;
+    background-color: #e7f3fe;
     padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    gap: 10px;
 }
 
 .skill-item i {
-    font-size: 20px;
-    color: #d17a22;
+    margin-right: 10px;
 }
 
-/* Portfolio */
 .portfolio-grid {
     display: flex;
     justify-content: center;
@@ -104,6 +107,11 @@ body {
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     width: 300px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
 }
 
 .project img {
@@ -111,21 +119,44 @@ body {
     border-radius: 10px;
 }
 
-/* Animations */
-.fade-in {
-    animation: fadeIn 2s ease-in-out;
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
 }
 
-.slide-up {
-    animation: slideUp 1.5s ease-in-out;
+.contact-item {
+    background: #e7f3fe;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+.contact-icon {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    margin-bottom: 5px;
 }
 
-@keyframes slideUp {
-    from { transform: translateY(50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    color: #0077cc;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }
