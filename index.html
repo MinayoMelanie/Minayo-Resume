@@ -5,78 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melanie Minayo - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+
+    <header class="header fade-in">
         <h1>Melanie Minayo</h1>
-        <p>Software Engineer | UI/UX Designer | Digital Marketer</p>
+        <p class="subtitle">Software Engineer | UI/UX Designer | Digital Marketer</p>
     </header>
 
-    <nav>
+    <nav class="navbar">
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
+    <section id="about" class="section slide-up">
         <h2>About Me</h2>
         <div class="profile-container">
-            <p>Hello! I'm Melanie Minayo, a passionate software developer specializing in AI, mobile & web development. 
-               I strive to build efficient, scalable, and innovative solutions to real-world problems.</p>
             <img src="myprofile.jpeg" alt="Melanie Minayo" class="profile-pic">
+            <p>
+                Hi! I’m Melanie Minayo, a passionate Software Engineer, UI/UX Designer, and Digital Marketer, 
+                currently a third-year Computer Science student at JKUAT.
+                I thrive at the intersection of technology and creativity, developing intuitive applications, 
+                designing seamless user experiences, and crafting powerful marketing strategies.
+                <br><br>
+                My expertise spans web and mobile development, front-end frameworks, and digital branding. 
+                I believe in continuous learning and problem-solving to build impactful tech solutions.
+                <br><br>
+                Let's connect and innovate together! 🚀
+            </p>
         </div>
     </section>
 
-    <section id="skills">
-        <img src="pllogos.jpg" alt="Skills Header" class="skills-header">
-        <div class="skills-list">
-            <h1>Technical Skills & Tools</h1>
-            <div class="skills-grid">
-                <div class="skill-item"><span class="skill-number">1</span> Design: Figma, Canva, Sketch</div>
-                <div class="skill-item"><span class="skill-number">2</span> Frontend: HTML5, CSS3, JavaScript</div>
-                <div class="skill-item"><span class="skill-number">3</span> Framework: React.js with TypeScript and JavaScript</div>
-                <div class="skill-item"><span class="skill-number">4</span> Backend: JavaScript with Express</div>
-            </div>
-            <p>My skills encompass design, frontend development, and version control. I'm proficient in responsive design and web accessibility.</p>
+    <section id="skills" class="section fade-in">
+        <h2>Technical Skills & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-item"><i class="fas fa-paint-brush"></i> UI/UX: Figma, Adobe XD, Sketch</div>
+            <div class="skill-item"><i class="fas fa-code"></i> Frontend: HTML5, CSS3, JavaScript, React.js</div>
+            <div class="skill-item"><i class="fas fa-server"></i> Backend: Node.js, Express.js, Firebase</div>
+            <div class="skill-item"><i class="fas fa-database"></i> Database: MySQL, MongoDB</div>
+            <div class="skill-item"><i class="fas fa-chart-line"></i> Digital Marketing: SEO, Google Ads</div>
+            <div class="skill-item"><i class="fab fa-git-alt"></i> Version Control: Git, GitHub</div>
         </div>
     </section>
 
-    <section id="portfolio">
+    <section id="portfolio" class="section slide-up">
         <h2>Portfolio</h2>
-
         <div class="portfolio-grid">
             <div class="project">
-                <h3>Geopasture</h3>
-                <img src="Geopasture.png" alt="Geopasture Project" class="project-img">
-                <p>GeoPasture is an innovative digital platform designed to resolve resource conflicts between pastoralists and crop farmers. 
-                    By providing real-time pasture updates, accurate weather forecasts, and GPS animal tracking, GeoPasture fosters dialogue 
-                    and collaboration for sustainable resource management. </p>
+                <img src="Geopasture.png" alt="Geopasture Project">
+                <h3>GeoPasture</h3>
+                <p>A platform helping pastoralists manage grazing land using AI and real-time updates.</p>
             </div>
-
             <div class="project">
+                <img src="ByteFlow.png" alt="Byteflow Project">
                 <h3>Byteflow</h3>
-                <img src="ByteFlow.png" alt="Byteflow Project" class="project-img">
-                <p>Collaborated with front-end developers to transform designs into high-quality, responsive web applications.
-                    Designed and implemented digital marketing campaigns, boosting client engagement and driving business growth.
-                    Conducted user research, usability testing, and data analysis to refine designs and optimize user experiences.</p>
-            </div>
-
-            <div class="project">
-                <h3>Guidelight</h3>
-                <img src="Guidelight.png" alt="Guidelight Project" class="project-img">
-                <p>GuideLight is an innovative assistive technology designed to empower visually impaired individuals with greater 
-                    independence. It harnesses the power of AI, providing real-time scene understanding and actionable audio feedback,
-                    transforming visual information into meaningful insights.</p>
+                <p>A high-performance SaaS platform integrating AI-driven business solutions.</p>
             </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:melaniemiayo00@gmail.com">melanieminayo00@gmail.com</a></p>
+        <p>Email: <a href="mailto:melanieminayo00@gmail.com">melanieminayo00@gmail.com</a></p>
         <p>LinkedIn: <a href="https://linkedin.com/in/melanie" target="_blank">linkedin.com/in/melanie</a></p>
         <p>GitHub: <a href="https://github.com/melanie" target="_blank">github.com/melanie</a></p>
     </section>
@@ -84,5 +81,6 @@
     <footer>
         <p>&copy; 2025 Melanie Minayo. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
