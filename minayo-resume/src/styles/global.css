@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5dc;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+.slide-up {
+  animation: slideUp 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Theme Variables */
+:root {
+  --background-color: #f5f5dc;
+  --text-color: #333;
+  --primary-color: #e2a32f;
+}
+
+.dark {
+  --background-color: #333;
+  --text-color: #f5f5dc;
+  --primary-color: #c88a1b;
+}
